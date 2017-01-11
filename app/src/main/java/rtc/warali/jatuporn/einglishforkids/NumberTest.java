@@ -40,7 +40,7 @@ public class NumberTest extends AppCompatActivity implements View.OnClickListene
         Log.d("4decV1", "timesAnInt ที่รับได้ ==> " + timesAnInt);
 
         myConstant = new MyConstant();
-        choiceInts = myConstant.getChoiceInts();
+        choiceInts = myConstant.getNumberChoiceInts();
         trueAnswerInts = myConstant.getTrueAnserInts();
 
         bindWidget();
@@ -49,8 +49,9 @@ public class NumberTest extends AppCompatActivity implements View.OnClickListene
         showView();
 
         //ShowQuestion
-        questionStrings = myConstant.getQurstionStrings();
+        questionStrings = myConstant.getNumberQuestionStrings();
         questionTextView.setText(questionStrings[timesAnInt]);
+        Log.d("11janV1", "Ques(" + timesAnInt + ") ==> " + questionStrings[timesAnInt]);
 
         //Image Controller
         firstImageView.setOnClickListener(this);
@@ -98,7 +99,7 @@ public class NumberTest extends AppCompatActivity implements View.OnClickListene
         firstImageView = (ImageView) findViewById(R.id.imageView4_nb);
         secondImageView = (ImageView) findViewById(R.id.imageView5_nb);
         thirdImageView = (ImageView) findViewById(R.id.imageView6_nb);
-        questionTextView = (TextView) findViewById(R.id.textView4);
+        questionTextView = (TextView) findViewById(R.id.textView4_nb);
         scoreTextView = (TextView) findViewById(R.id.textView3_nb);
 
         scoreTextView.setVisibility(View.INVISIBLE);

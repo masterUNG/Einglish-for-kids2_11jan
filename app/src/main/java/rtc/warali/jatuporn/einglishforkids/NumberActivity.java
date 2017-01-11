@@ -68,7 +68,7 @@ public class NumberActivity extends AppCompatActivity {
 
                 mediaPlayer.stop();
 
-                Intent intent = new Intent(NumberActivity.this, TestActivity.class);
+                Intent intent = new Intent(NumberActivity.this, NumberTest.class);
                 intent.putExtra("Times", timesAnInt);
                 timesAnInt += 1;
 

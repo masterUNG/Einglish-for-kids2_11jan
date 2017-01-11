@@ -83,6 +83,14 @@ public class MyConstant {
             {R.drawable.ky1, R.drawable.ky2, R.drawable.ky3},
             {R.drawable.kz1, R.drawable.kz2, R.drawable.kz3}};
 
+    public String[] getNumberQuestionStrings() {
+        return numberQuestionStrings;
+    }
+
+    public int[][] getNumberChoiceInts() {
+        return numberChoiceInts;
+    }
+
     public String[] getQurstionStrings() {
         return qurstionStrings;
     }
