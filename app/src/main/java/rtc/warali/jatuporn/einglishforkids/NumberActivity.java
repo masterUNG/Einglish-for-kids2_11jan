@@ -21,19 +21,16 @@ public class NumberActivity extends AppCompatActivity {
     private ImageView imageView;
     private Button backButton, playButton;
 
-    private int[] soundInts = new int[]{R.raw.aa,R.raw.bb,R.raw.cc,
-            R.raw.dd, R.raw.ee,R.raw.ff,R.raw.gg,R.raw.hh,R.raw.ii,
-            R.raw.jj, R.raw.kk,R.raw.ll,R.raw.mm,R.raw.nn,R.raw.oo,
-            R.raw.pp, R.raw.qq,R.raw.rr,R.raw.ss,R.raw.tt,R.raw.uu,
-            R.raw.vv, R.raw.ww,R.raw.xx,R.raw.yy,R.raw.zz};
+    private int[] soundInts = new int[]{R.raw.nb1, R.raw.nb2, R.raw.nb3, R.raw.nb4, R.raw.nb5,
+            R.raw.nb6, R.raw.nb7, R.raw.nb8, R.raw.nb9, R.raw.nb10, R.raw.nb11, R.raw.nb12,
+            R.raw.nb13, R.raw.nb14, R.raw.nb15, R.raw.nb16, R.raw.nb17,
+            R.raw.nb18, R.raw.nb19, R.raw.nb20};
 
-    private int[] imageInts = new int[]{R.drawable.a, R.drawable.b,
-            R.drawable.c,R.drawable.d,R.drawable.e,R.drawable.f,
-            R.drawable.g,R.drawable.h,R.drawable.i,R.drawable.j,
-            R.drawable.k,R.drawable.l,R.drawable.m,R.drawable.n,
-            R.drawable.o,R.drawable.p,R.drawable.q,R.drawable.r,
-            R.drawable.s,R.drawable.t,R.drawable.u,R.drawable.v,
-            R.drawable.w,R.drawable.x,R.drawable.y,R.drawable.z};
+    private int[] imageInts = new int[]{R.drawable.n1, R.drawable.n2, R.drawable.n3, R.drawable.n4,
+            R.drawable.n5, R.drawable.n6, R.drawable.n7, R.drawable.n8,
+            R.drawable.n9, R.drawable.n10, R.drawable.n11, R.drawable.n12,
+            R.drawable.n13, R.drawable.n14, R.drawable.n15, R.drawable.n16,
+            R.drawable.n17, R.drawable.n18, R.drawable.n19, R.drawable.n20};
 
     private MediaPlayer mediaPlayer;
 
@@ -42,13 +39,13 @@ public class NumberActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contant);
+        setContentView(R.layout.activity_number);
 
         //Bind Widget
-        textView = (TextView) findViewById(R.id.textView2);
-        imageView = (ImageView) findViewById(R.id.imageView3);
-        backButton = (Button) findViewById(R.id.button);
-        playButton = (Button) findViewById(R.id.button2);
+        textView = (TextView) findViewById(R.id.textView2_nb);
+        imageView = (ImageView) findViewById(R.id.imageView3_nb);
+        backButton = (Button) findViewById(R.id.button_nb);
+        playButton = (Button) findViewById(R.id.button2_nb);
 
 
         //Show Text
