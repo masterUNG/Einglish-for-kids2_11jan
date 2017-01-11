@@ -139,7 +139,7 @@ public class NumberTest extends AppCompatActivity implements View.OnClickListene
 
             Toast.makeText(NumberTest.this, "ยินดีด้วยคุณตอบถูก คะ", Toast.LENGTH_SHORT).show();
 
-            if (timesAnInt >= 25) {
+            if (timesAnInt >= 19) {
                 startActivity(new Intent(NumberTest.this, MainActivity.class));
                 finish();
             } else {
