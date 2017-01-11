@@ -142,7 +142,12 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
 
             Toast.makeText(TestActivity.this, "ยินดีด้วยคุณตอบถูก คะ", Toast.LENGTH_SHORT).show();
 
-            finish();
+            if (timesAnInt >= 25) {
+                startActivity(new Intent(TestActivity.this, MainActivity.class));
+                finish();
+            } else {
+                finish();
+            }
 
         } else {
             //Answer False
