@@ -35,6 +35,8 @@ public class ContantActivity extends AppCompatActivity {
             R.drawable.s,R.drawable.t,R.drawable.u,R.drawable.v,
             R.drawable.w,R.drawable.x,R.drawable.y,R.drawable.z};
 
+    private MediaPlayer mediaPlayer;
+
 
     @Override
 
@@ -59,12 +61,16 @@ public class ContantActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mediaPlayer.stop();
                 finish();
             }
         });
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                mediaPlayer.stop();
+
                 Intent intent = new Intent(ContantActivity.this, TestActivity.class);
                 intent.putExtra("Times", timesAnInt);
                 timesAnInt += 1;
@@ -99,7 +105,7 @@ public class ContantActivity extends AppCompatActivity {
 
 
     private void soundEffect(int index) {
-        final MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), soundInts[index]);
+        mediaPlayer = MediaPlayer.create(getBaseContext(), soundInts[index]);
         mediaPlayer.start();
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
