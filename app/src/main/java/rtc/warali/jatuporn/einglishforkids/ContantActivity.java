@@ -61,7 +61,11 @@ public class ContantActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.stop();
+                try {
+                    mediaPlayer.stop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 finish();
             }
         });

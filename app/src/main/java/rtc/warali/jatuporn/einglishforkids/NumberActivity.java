@@ -58,7 +58,11 @@ public class NumberActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.stop();
+                try {
+                    mediaPlayer.stop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 finish();
             }
         });
@@ -66,7 +70,11 @@ public class NumberActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                mediaPlayer.stop();
+                try {
+                    mediaPlayer.stop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 Intent intent = new Intent(NumberActivity.this, NumberTest.class);
                 intent.putExtra("Times", timesAnInt);
