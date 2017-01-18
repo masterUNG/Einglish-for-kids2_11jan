@@ -69,7 +69,11 @@ public class ContantActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                mediaPlayer.stop();
+                try {
+                    mediaPlayer.stop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 Intent intent = new Intent(ContantActivity.this, TestActivity.class);
                 intent.putExtra("Times", timesAnInt);
