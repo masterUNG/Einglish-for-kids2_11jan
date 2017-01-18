@@ -8,18 +8,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContantActivity" />
-        <activity android:name=".TestActivity" />
-        <activity android:name=".Shop" />
-        <activity android:name=".NumberActivity" />
-        <activity android:name=".NumberTest"></activity>
+        <activity android:name=".ContantActivity" android:screenOrientation="portrait" />
+        <activity android:name=".TestActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Shop" android:screenOrientation="portrait" />
+        <activity android:name=".NumberActivity" android:screenOrientation="portrait" />
+        <activity android:name=".NumberTest" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
